@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HomeHeader" id="iN0-l3-epB" customClass="HomeHeader" customModule="AppsSquare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFt-9G-ZUW">
+                    <rect key="frame" x="20" y="0.0" width="385" height="45"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mOQ-42-ZBA">
+                            <rect key="frame" x="8" y="6" width="25" height="33"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="F5a-Kg-cC2"/>
+                                <constraint firstAttribute="height" constant="35" id="xVT-aa-Ed0"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-pq-sdL">
+                            <rect key="frame" x="43" y="5" width="298" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="searchAction:" destination="iN0-l3-epB" eventType="editingChanged" id="rTr-VS-CDd"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-qF-kc2">
+                            <rect key="frame" x="351" y="7.5" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Egd-Xy-QCs"/>
+                                <constraint firstAttribute="height" constant="30" id="aBf-kJ-6oG"/>
+                            </constraints>
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal">
+                                <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelSearchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Qf-95-3Yh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4i3-pq-sdL" firstAttribute="leading" secondItem="mOQ-42-ZBA" secondAttribute="trailing" constant="10" id="1uo-OF-eFs"/>
+                        <constraint firstItem="mOQ-42-ZBA" firstAttribute="centerY" secondItem="nFt-9G-ZUW" secondAttribute="centerY" id="37A-BJ-2Ad"/>
+                        <constraint firstAttribute="trailing" secondItem="gHg-qF-kc2" secondAttribute="trailing" constant="4" id="8uK-yn-X6r"/>
+                        <constraint firstAttribute="bottom" secondItem="4i3-pq-sdL" secondAttribute="bottom" constant="5" id="DHr-Jy-y7U"/>
+                        <constraint firstItem="gHg-qF-kc2" firstAttribute="leading" secondItem="4i3-pq-sdL" secondAttribute="trailing" constant="10" id="FLR-yU-Fdu"/>
+                        <constraint firstItem="gHg-qF-kc2" firstAttribute="centerY" secondItem="nFt-9G-ZUW" secondAttribute="centerY" id="FQ2-fR-xLI"/>
+                        <constraint firstAttribute="height" constant="45" id="Ji1-t2-17T"/>
+                        <constraint firstItem="mOQ-42-ZBA" firstAttribute="leading" secondItem="nFt-9G-ZUW" secondAttribute="leading" constant="8" id="O5x-Ko-cFk"/>
+                        <constraint firstItem="4i3-pq-sdL" firstAttribute="top" secondItem="nFt-9G-ZUW" secondAttribute="top" constant="5" id="uwP-M6-1iT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gIh-iD-HBo">
+                    <rect key="frame" x="10" y="55" width="395" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="hMh-SR-RLa"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mOi-nF-JwF">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gIh-iD-HBo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="FD6-mJ-Fo0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gIh-iD-HBo" secondAttribute="trailing" constant="20" id="GIU-Vi-IFw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nFt-9G-ZUW" secondAttribute="trailing" constant="20" id="HBv-6j-My8"/>
+                <constraint firstItem="gIh-iD-HBo" firstAttribute="top" secondItem="nFt-9G-ZUW" secondAttribute="bottom" constant="10" id="Pgg-MN-rzF"/>
+                <constraint firstItem="nFt-9G-ZUW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fZp-od-7jZ"/>
+                <constraint firstItem="nFt-9G-ZUW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o9j-8n-ncX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelSearch" destination="gHg-qF-kc2" id="71s-mE-jwu"/>
+                <outlet property="collectionView" destination="gIh-iD-HBo" id="0XE-zF-JPd"/>
+                <outlet property="searchTF" destination="4i3-pq-sdL" id="Zc4-1H-Fpy"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="-162.05357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

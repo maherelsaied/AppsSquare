@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Favorite" representedClassName="Favorite" syncable="YES" codeGenerationType="class">
+        <attribute name="description1" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="mainImage" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="numOfOrder" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="photoCredit" attributeType="String"/>
+        <attribute name="price" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="restrictions" attributeType="Transformable" customClassName="Array&lt;String&gt;"/>
+        <attribute name="thumbnailImage" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Favorite" positionX="-54" positionY="-9" width="128" height="178"/>
+    </elements>
+</model>
